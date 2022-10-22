@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gcc-wY-OL4">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="8x0-xi-M27">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="gcc-wY-OL4" customClass="ViewController" customModule="Malsha_C0871063_GuessPrime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nHj-Uv-fhN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-hf-Dqp">
+                                <rect key="frame" x="20" y="70" width="360" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dTO-mE-HNm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyw-Aa-DrR">
+                                <rect key="frame" x="95" y="220" width="200" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-iZ-XLD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="go2-zU-Yac">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GbA-yD-y6D" appends="YES" id="SlP-2W-pSd"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="go2-zU-Yac" firstAttribute="top" secondItem="Dyw-Aa-DrR" secondAttribute="top" id="6t6-IK-XEz"/>
+                                    <constraint firstItem="go2-zU-Yac" firstAttribute="leading" secondItem="Dyw-Aa-DrR" secondAttribute="leading" id="B3h-kJ-DRy"/>
+                                    <constraint firstAttribute="width" constant="200" id="HCt-g8-eZZ"/>
+                                    <constraint firstAttribute="height" constant="100" id="bck-lk-mn5"/>
+                                    <constraint firstAttribute="trailing" secondItem="bpP-iZ-XLD" secondAttribute="trailing" id="dCf-Ek-RFO"/>
+                                    <constraint firstAttribute="bottom" secondItem="bpP-iZ-XLD" secondAttribute="bottom" id="fkd-aL-Xjh"/>
+                                    <constraint firstItem="bpP-iZ-XLD" firstAttribute="leading" secondItem="Dyw-Aa-DrR" secondAttribute="leading" id="oky-aV-XA2"/>
+                                    <constraint firstAttribute="bottom" secondItem="go2-zU-Yac" secondAttribute="bottom" id="puS-Gh-FdE"/>
+                                    <constraint firstItem="bpP-iZ-XLD" firstAttribute="top" secondItem="Dyw-Aa-DrR" secondAttribute="top" id="tsF-rl-uh3"/>
+                                    <constraint firstAttribute="trailing" secondItem="go2-zU-Yac" secondAttribute="trailing" id="znA-0Z-r6G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uO9-2y-Nfp">
+                                <rect key="frame" x="95" y="350" width="200" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non Prime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-F5-s1E">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jxP-uO-iAL">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dHT-GF-Akw" appends="YES" id="q5e-Ll-5Mw"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0HX-OZ-9p1"/>
+                                    <constraint firstItem="jxP-uO-iAL" firstAttribute="leading" secondItem="uO9-2y-Nfp" secondAttribute="leading" id="8S7-wu-YlQ"/>
+                                    <constraint firstItem="jxP-uO-iAL" firstAttribute="top" secondItem="uO9-2y-Nfp" secondAttribute="top" id="FI7-SX-jU4"/>
+                                    <constraint firstItem="eDl-F5-s1E" firstAttribute="leading" secondItem="uO9-2y-Nfp" secondAttribute="leading" id="HCs-P3-h8s"/>
+                                    <constraint firstAttribute="trailing" secondItem="jxP-uO-iAL" secondAttribute="trailing" id="Nsz-bT-jhu"/>
+                                    <constraint firstItem="eDl-F5-s1E" firstAttribute="top" secondItem="uO9-2y-Nfp" secondAttribute="top" id="TAM-kz-HEB"/>
+                                    <constraint firstAttribute="width" constant="200" id="YSq-Ae-Uvj"/>
+                                    <constraint firstAttribute="trailing" secondItem="eDl-F5-s1E" secondAttribute="trailing" id="e5F-qN-Ip1"/>
+                                    <constraint firstAttribute="bottom" secondItem="eDl-F5-s1E" secondAttribute="bottom" id="eua-Hr-tpa"/>
+                                    <constraint firstAttribute="bottom" secondItem="jxP-uO-iAL" secondAttribute="bottom" id="n6B-kv-HcK"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-oI-eT1">
+                                <rect key="frame" x="120" y="530" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3KR-uE-UEB"/>
+                                    <constraint firstAttribute="height" constant="150" id="oC4-Ca-xUE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jhx-lN-HwS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fh9-oI-eT1" firstAttribute="top" secondItem="uO9-2y-Nfp" secondAttribute="bottom" constant="80" id="1V4-D8-fee"/>
+                            <constraint firstItem="uO9-2y-Nfp" firstAttribute="centerX" secondItem="jhx-lN-HwS" secondAttribute="centerX" id="1sU-GC-YeW"/>
+                            <constraint firstItem="jhx-lN-HwS" firstAttribute="trailing" secondItem="Ukb-hf-Dqp" secondAttribute="trailing" constant="10" id="9F1-Du-0uN"/>
+                            <constraint firstItem="uO9-2y-Nfp" firstAttribute="top" secondItem="Dyw-Aa-DrR" secondAttribute="bottom" constant="30" id="BhO-Mk-C2A"/>
+                            <constraint firstItem="Ukb-hf-Dqp" firstAttribute="top" secondItem="jhx-lN-HwS" secondAttribute="top" constant="23" id="TsY-5l-9Ya"/>
+                            <constraint firstItem="Dyw-Aa-DrR" firstAttribute="centerX" secondItem="jhx-lN-HwS" secondAttribute="centerX" id="alX-Et-3Pf"/>
+                            <constraint firstItem="Ukb-hf-Dqp" firstAttribute="leading" secondItem="jhx-lN-HwS" secondAttribute="leading" constant="20" id="lHg-Bm-G57"/>
+                            <constraint firstItem="Dyw-Aa-DrR" firstAttribute="top" secondItem="Ukb-hf-Dqp" secondAttribute="bottom" constant="50" id="plI-S1-Wzx"/>
+                            <constraint firstItem="fh9-oI-eT1" firstAttribute="centerX" secondItem="jhx-lN-HwS" secondAttribute="centerX" id="woc-WM-CgD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerImage" destination="fh9-oI-eT1" id="yzp-IZ-dra"/>
+                        <outlet property="nonPrimeTap" destination="dHT-GF-Akw" id="WTJ-VM-a0K"/>
+                        <outlet property="numberLabel" destination="Ukb-hf-Dqp" id="htS-aq-Qbt"/>
+                        <outlet property="primeTap" destination="GbA-yD-y6D" id="V99-6d-qDk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-4W-qNR" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GbA-yD-y6D">
+                    <connections>
+                        <action selector="didTapPrimeImageView:" destination="gcc-wY-OL4" id="1ZU-19-DZj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dHT-GF-Akw">
+                    <connections>
+                        <action selector="didTapNonPrimeImageView:" destination="gcc-wY-OL4" id="NW3-j0-Alb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="865" y="-7"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
